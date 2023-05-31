@@ -1,0 +1,77 @@
+.table {
+  padding: 20px;
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    z-index: 999;
+
+    .modal-image-container {
+      display: flex;
+      flex-direction: column;
+
+      .modal-content {
+        text-align: center;
+        margin-bottom: 15px;
+
+        & > .modal-content-desc {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          margin: 15px 0;
+        }
+      }
+    }
+  }
+}
+
+.isLoading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100dvh;
+}
+
+.theme-dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.theme-dark {
+  background-color: #333;
+}
+
+.theme-dark .MuiDataGrid-root {
+  color: #fff;
+}
+
+.theme-dark .modal-image-container {
+  background-color: #111;
+}
+
+.theme-dark .modal-content {
+  color: #fff;
+}
+
+.theme-dark .modal-close {
+  color: #333;
+}
+
+.theme-dark body {
+  background: #333;
+}
+
+.MuiDataGrid-virtualScrollerRenderZone > * {
+  min-height: 100px;
+  height: auto;
+  max-height: 300px;
+}
